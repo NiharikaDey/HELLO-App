@@ -1,0 +1,17 @@
+public class HelloArgs {
+    public static void main(String[] args) {
+        System.out.println("Hello");
+
+        String result = "Arguments: ";
+
+        for (int i = 0; i < args.length; i++) {
+            result = result + args[i];
+
+            if (i < args.length - 1) {
+                result = result + ", "; // add delimiter between arguments
+            }
+        }
+
+        System.out.println(result);
+    }
+}
