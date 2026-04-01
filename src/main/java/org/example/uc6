@@ -1,0 +1,18 @@
+public class HelloArgs {
+    public static void main(String[] args) {
+        System.out.println("Hello");
+
+        String result = "";
+
+        for (String arg : args) {
+            result += arg + ", ";  // add delimiter
+        }
+
+        // Remove trailing ", " using substring
+        if (result.length() > 0) {
+            result = result.substring(0, result.length() - 2);
+        }
+
+        System.out.println("Arguments: " + result);
+    }
+}
